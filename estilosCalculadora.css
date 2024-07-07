@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+body {
+    background-color: #09090a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculadora {
+    background-color: #131314;
+    width: 350px;
+    height: 600px;
+    border-radius: 25px;
+    border-color: #ccb588;
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.pantalla {
+    background-color: #09090a;
+    width: 100%;
+    height: 20%;
+    border-style: solid;
+    border-color: #ccb588;
+    border-radius: 25px;
+    border-width: 2px;
+    font-family: "Cinzel", sans-serif;
+    font-size: 40px;
+    color: #ccb588;
+    margin-bottom: 10px;
+    padding: 6px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end;
+}
+
+.botones {
+    background-color: #09090a;
+    width: 100%;
+    height: 80%;
+    border-style: solid;
+    border-color: #ccb588;
+    border-radius: 25px;
+    border-width: 2px;
+    display: grid;
+    gap: 5px;
+    padding: 6px;
+    grid-template-areas: 
+        "DEL AC division multiplicacion"
+        "siete ocho nueve menos"
+        "cuatro cinco seis mas"
+        "uno dos tres igual"
+        "cero cero punto igual"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);  
+}
+
+.botonSimple {
+    width: 100%;
+    height: 100%;
+    background-color: #1e1e1e;
+    border: 2px solid #ccb588;
+    border-radius: 15px;
+    color: #ccb588;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botonSimple:hover {
+    background-color: #ccb588;
+    color: white;
+}
+
+.borrarUno { grid-area: borrarUno; }
+.borrarTodo { grid-area: borrarTodo; }
+.division { grid-area: division; }
+.multiplicacion { grid-area: multiplicacion; }
+.siete { grid-area: siete; }
+.ocho { grid-area: ocho; }
+.nueve { grid-area: nueve; }
+.menos { grid-area: menos; }
+.cuatro { grid-area: cuatro; }
+.cinco { grid-area: cinco; }
+.seis { grid-area: seis; }
+.mas { grid-area: mas; }
+.uno { grid-area: uno; }
+.dos { grid-area: dos; }
+.tres { grid-area: tres; }
+.cero { grid-area: cero; }
+.punto { grid-area: punto; }
+.igual { grid-area: igual; }
